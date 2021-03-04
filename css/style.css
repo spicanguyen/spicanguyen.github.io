@@ -19,7 +19,6 @@ body {
 .container header {
   background: url("/images/slider.png") no-repeat;
   width: 1440px;
-  height: 799px;
 }
 
 .container header .main {
@@ -124,9 +123,9 @@ body {
   color: #fdce76;
 }
 
-.container header .slider {
+.container header .main .slider {
   width: 500px;
-  padding: 120px 60px;
+  padding: 120px 0px;
   left: 10px;
 }
 
@@ -138,6 +137,8 @@ body {
   border: 0.5px #fdce76 solid;
   color: #333;
   margin-right: 20px;
+  font-size: 16px;
+  font-weight: 500;
 }
 
 .container button:hover {
@@ -147,29 +148,29 @@ body {
 }
 
 .container section {
-  height: 370px;
   background-color: #3265da;
 }
 
 .container section .main {
+  margin: 0 auto;
+}
+
+.container section .main .main-sub {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin: 0 auto;
-  padding: 30px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .container section .main .relative {
   width: 200px;
-  height: 270px;
   background-color: #4675dd;
   color: #fff;
   padding: 20px 20px;
-  margin: 30px;
   text-align: center;
+  margin: 30px 0;
 }
 
 .container section .main .relative p {
@@ -184,12 +185,15 @@ body {
 }
 
 .container .about {
-  height: 600px;
   background-color: white;
 }
 
-.container .about .content_about {
-  width: 1440px;
+.container .about .main {
+  margin: 0 auto;
+}
+
+.container .about .main .content_about {
+  width: 1200px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -199,109 +203,114 @@ body {
   padding-bottom: 30px;
 }
 
-.container .about .content_about .left_content {
+.container .about .main .content_about .left_content {
   padding: 50px;
 }
 
-.container .about .content_about .left_content .title {
+.container .about .main .content_about .left_content .title {
   font-size: 30px;
 }
 
-.container .about .content_about .left_content pre {
+.container .about .main .content_about .left_content pre {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   padding: 20px;
 }
 
-.container .about .content_about .banner_about {
+.container .about .main .content_about .banner_about {
   margin-top: 50px;
   width: 500px;
   background: url("/images/service.png") no-repeat;
   background-size: cover;
 }
 
-.container .about hr {
-  width: 100px;
+.container .about .main hr {
+  width: 1200px;
   color: #666;
 }
 
-.container .about .about_support {
-  width: 1440px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.container .about .about_support .support {
-  width: 280px;
+.container .about .main .about_support {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 0 40px 0 40px;
 }
 
-.container .about .about_support .support .icon_support {
+.container .about .main .about_support .support {
+  width: 320px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 20px 40px;
+}
+
+.container .about .main .about_support .support .icon_support {
   padding: 40px 20px 0 0;
 }
 
-.container .about .about_support .support img {
+.container .about .main .about_support .support img {
   width: 80px;
 }
 
 .container .pricing {
   background: url("/images/pricing.png") no-repeat;
-  height: 317px;
+}
+
+.container .pricing .main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-}
-
-.container .pricing .content_pricing {
-  padding: 60px;
-  color: #fff;
+  margin: 0 auto;
   text-align: center;
 }
 
-.container .pricing .content_pricing .number {
-  font-size: 30px;
+.container .pricing .main .content_pricing {
+  padding: 50px;
+  width: 200px;
+  color: #fff;
+}
+
+.container .pricing .main .content_pricing .number {
+  font-size: 40px;
+  margin: 0;
 }
 
 .container .service {
-  height: 430px;
   background-color: white;
+}
+
+.container .service .main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
 }
 
-.container .service .banner_service {
+.container .service .main .banner_service {
   padding: 40px;
 }
 
-.container .service .right_service {
+.container .service .main .right_service {
   padding: 40px;
 }
 
 .container .blog {
-  height: 200px;
   background-color: #f5f5f5;
   text-align: center;
   padding: 60px;
 }
 
 .container .customer {
-  height: 200px;
   background-color: white;
 }
 
