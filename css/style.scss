@@ -1,0 +1,283 @@
+.container {
+    width: 1440px;
+    height: auto;
+    background-color: rgb(37, 116, 90);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0 auto;
+    display: block;
+
+    header {
+        background: url("/images/slider.png")no-repeat;
+        width: 1440px;
+        height: 799px;
+
+        .header_menu {
+            display: flex;
+            justify-content: center;
+
+            .logo {
+                display: flex;
+                justify-content: space-around;
+                padding: 10px 0px;
+                width: 100px;
+
+                h4 {
+                    color: #fdce76;
+                }
+            }
+
+            .menu {
+                width: 1000px;
+                display: flex;
+                justify-content: space-around;
+
+                ul {
+                    list-style: none;
+                    display: flex;
+                    padding: 0;
+
+                    li {
+                        padding: 10px 20px;
+                        position: relative;
+
+                        &.active {
+                            a {
+                                color: #fdce76;
+                            }
+                        }
+
+                        &:hover {
+                            ul {
+                                visibility: visible;
+                            }
+                        }
+
+                        a {
+                            text-decoration: none;
+                            color: white;
+                            display: block;
+
+                            &:hover {
+                                color: #fdce76;
+                            }
+                        }
+
+                        ul {
+                            visibility: hidden;
+                            position: absolute;
+                            flex-direction: column;
+                            top: 38px;
+                            left: 0;
+                            width: 100px;
+
+                            li {
+                                padding-bottom: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .login {
+                width: 200px;
+                padding: 20px;
+
+                button {
+                    background-color: transparent;
+                    height: 40px;
+                    width: 200px;
+                    border-radius: 20px;
+                    border: 0.5px #fff solid;
+                    color: #fff;
+
+                    &:hover {
+                        background-color: #fff;
+                        color: #fdce76;
+                    }
+                }
+            }
+
+        }
+
+
+
+        .slider {
+            width: 500px;
+            padding: 120px 60px;
+            left: 10px;
+
+
+        }
+    }
+
+    button {
+
+        height: 40px;
+        width: 150px;
+        border-radius: 20px;
+        background-color: #fdce76;
+        border: 0.5px #fdce76 solid;
+        color: #333;
+        margin-right: 20px;
+
+        &:hover {
+            background-color: transparent;
+            border: 0.5px #333 solid;
+            color: #333;
+        }
+    }
+
+    section {
+        height: 370px;
+        background-color: #3265da;
+        padding: 30px;
+        display: flex;
+        justify-content: center;
+
+        .relative {
+            width: 200px;
+            height: 270px;
+            background-color: #4675dd;
+            color: #fff;
+            padding: 20px 20px;
+            margin: 30px;
+            text-align: center;
+
+            p {
+                color: #e8e5e5;
+            }
+
+
+            a {
+                text-decoration: none;
+                color: #fff;
+                font-weight: 700;
+                padding-bottom: 10px;
+            }
+        }
+
+    }
+
+    .about {
+        height: 600px;
+        background-color: white;
+
+        .content_about {
+            width: 1440px;
+            display: flex;
+            justify-content: space-between;
+
+            .left_content {
+                padding: 50px;
+
+
+                .title {
+                    font-size: 30px;
+                }
+
+                pre {
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                    padding: 20px;
+                }
+            }
+
+            .banner_about {
+                margin-top: 50px;
+                width: 500px;
+                background: url("/images/service.png")no-repeat;
+                // height: 280px;
+                background-size: cover;
+            }
+
+            padding-bottom: 30px;
+        }
+
+        hr {
+            width: 100px;
+            color: #666;
+        }
+
+        .about_support {
+            width: 1440px;
+            display: flex;
+            justify-content: space-between;
+
+            .support {
+                width: 280px;
+                display: flex;
+                justify-content: center;
+                padding: 0 40px 0 40px;
+
+                .icon_support {
+                    padding: 40px 20px 0 0;
+                }
+
+                img {
+                    width: 80px;
+                }
+            }
+        }
+
+    }
+
+    .pricing {
+        background: url("/images/pricing.png")no-repeat;
+        height: 317px;
+        display: flex;
+        justify-content: space-between;
+
+        .content_pricing {
+            padding: 60px;
+
+            .number {
+                font-size: 30px;
+            }
+
+            color: #fff;
+            text-align: center;
+        }
+    }
+
+    .service {
+        height: 430px;
+        background-color: white;
+        display: flex;
+        justify-content: space-between;
+
+        .banner_service {
+            padding: 40px;
+        }
+
+        .right_service {
+            padding: 40px;
+        }
+
+    }
+
+    .blog {
+        height: 200px;
+        background-color: #f5f5f5;
+        text-align: center;
+        padding: 60px;
+    }
+
+    .customer {
+        height: 200px;
+        background-color: white;
+    }
+
+    .contact {
+        height: 400px;
+        background-color: #3265da;
+    }
+
+    footer {
+        height: 400px;
+        background-color: #23262b;
+
+        .abc {
+            text-transform: uppercase;
+        }
+    }
+
+}
