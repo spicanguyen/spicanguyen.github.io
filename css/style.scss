@@ -6,8 +6,10 @@ body {
 .container {
     width: 1440px;
     height: auto;
-    background-color: rgb(37, 116, 90);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #4675dd;
+    color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
     margin: 0 auto;
     display: block;
 
@@ -18,122 +20,148 @@ body {
     header {
         background: url("/images/slider.png")no-repeat;
         width: 1440px;
+        height: 1050px;
+    }
 
+    .btn_grey {
+        border-radius: 30px;
+        background-color: transparent;
+        border: 0.5px #999 solid;
+        color: #333;
+        margin-right: 20px;
+        font-size: 16px;
+        font-weight: 500;
+        padding: 15px 30px;
 
-        .main {
-            margin: 0 auto;
+        &:hover {
 
-            .header_menu {
-                display: flex;
-                justify-content: center;
-
-                .logo {
-                    display: flex;
-                    justify-content: space-around;
-                    padding: 10px 0px;
-                    width: 100px;
-
-                    h4 {
-                        color: #fdce76;
-                    }
-                }
-
-                .menu {
-                    width: 1000px;
-                    display: flex;
-                    justify-content: space-around;
-
-                    ul {
-                        list-style: none;
-                        display: flex;
-                        padding: 0;
-
-                        li {
-                            padding: 10px 20px;
-                            position: relative;
-
-                            &.active {
-                                a {
-                                    color: #fdce76;
-                                }
-                            }
-
-                            &:hover {
-                                ul {
-                                    visibility: visible;
-                                }
-                            }
-
-                            a {
-                                text-decoration: none;
-                                color: white;
-                                display: block;
-
-                                &:hover {
-                                    color: #fdce76;
-                                }
-                            }
-
-                            ul {
-                                visibility: hidden;
-                                position: absolute;
-                                flex-direction: column;
-                                top: 38px;
-                                left: 0;
-                                width: 100px;
-
-                                li {
-                                    padding-bottom: 10px;
-                                }
-                            }
-                        }
-                    }
-                }
-
-                .login {
-                    width: 200px;
-                    padding: 20px;
-
-                    button {
-                        background-color: transparent;
-                        height: 40px;
-                        width: 200px;
-                        border-radius: 20px;
-                        border: 0.5px #fff solid;
-                        color: #fff;
-
-                        &:hover {
-                            background-color: #fff;
-                            color: #fdce76;
-                        }
-                    }
-                }
-            }
-
-            .slider {
-                width: 500px;
-                padding: 120px 0px;
-                left: 10px;
-            }
+            background-color: #999;
+            color: #fff;
         }
     }
 
-    button {
-
-        height: 40px;
-        width: 150px;
-        border-radius: 20px;
+    .btn_orange {
+        border-radius: 30px;
         background-color: #fdce76;
         border: 0.5px #fdce76 solid;
         color: #333;
         margin-right: 20px;
         font-size: 16px;
         font-weight: 500;
+        padding: 15px 30px;
 
         &:hover {
             background-color: transparent;
-            border: 0.5px #333 solid;
-            color: #333;
+            border: 0.5px #fdce76 solid;
+            color: #fdce76;
+        }
+    }
+
+    .main {
+        margin: 0 auto;
+
+        .header_menu {
+            display: flex;
+            justify-content: center;
+            padding-top: 40px;
+
+            .logo {
+                display: flex;
+                justify-content: space-around;
+                width: 100px;
+
+                h3 {
+                    color: #fdce76;
+                }
+            }
+
+            .menu {
+                width: 1000px;
+                display: flex;
+                justify-content: space-around;
+
+                ul {
+                    list-style: none;
+                    display: flex;
+                    padding: 0;
+
+                    li {
+                        padding-right: 40px;
+                        position: relative;
+
+                        &.active {
+                            a {
+                                color: #fdce76;
+                            }
+                        }
+
+                        &:hover {
+                            ul {
+                                visibility: visible;
+                            }
+                        }
+
+                        a {
+                            text-decoration: none;
+                            color: white;
+                            display: block;
+
+                            &:hover {
+                                color: #fdce76;
+                            }
+                        }
+
+                        ul {
+                            visibility: hidden;
+                            position: absolute;
+                            flex-direction: column;
+                            top: 38px;
+                            left: 0;
+                            width: 100px;
+
+                            li {
+                                padding-bottom: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .login {
+                width: 300px;
+
+                button {
+                    background-color: transparent;
+                    border-radius: 30px;
+                    border: 0.5px #fff solid;
+                    color: #fff;
+                    padding: 15px 30px;
+                    font-size: 16px;
+
+                    &:hover {
+                        color: #fdce76;
+                        border: 0.5px #fdce76 solid;
+                    }
+                }
+            }
+        }
+
+        .slider {
+
+            padding: 200px 0px;
+            left: 10px;
+
+            h1 {
+                width: 700px;
+                font-size: 50px;
+                line-height: 0.5;
+            }
+
+            .slider_text {
+                width: 500px;
+                color: #666;
+                line-height: 1.5;
+            }
         }
     }
 
@@ -147,25 +175,30 @@ body {
             .main-sub {
                 display: flex;
                 justify-content: space-between;
+                padding: 40px;
             }
 
             .relative {
                 width: 200px;
                 background-color: #4675dd;
                 color: #fff;
-                padding: 20px 20px;
+                padding: 30px 30px;
                 text-align: center;
-                margin: 30px 0;
+                line-height: 1.5;
+                margin: 10px 0;
 
                 p {
-                    color: #e8e5e5;
+                    color: #c5d2f1;
                 }
 
                 a {
                     text-decoration: none;
                     color: #fff;
-                    font-weight: 700;
                     padding-bottom: 10px;
+
+                    &:hover {
+                        color: #fdce76;
+                    }
                 }
             }
 
@@ -188,13 +221,25 @@ body {
                 .left_content {
                     padding: 50px;
 
-                    .title {
-                        font-size: 30px;
+                    h2 {
+                        font-size: 40px;
+                        font-weight: 200;
                     }
 
-                    pre {
-                        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-                        padding: 20px;
+                    i {
+                        padding-right: 20px;
+                        color: #fdce76;
+                    }
+
+                    .head_text {
+                        font-size: 18px;
+                        width: 400px;
+                        line-height: 1.5;
+                    }
+
+                    .text {
+                        color: #666;
+                        line-height: 1.5;
                     }
                 }
 
@@ -288,20 +333,84 @@ body {
 
     .customer {
         background-color: white;
+
+        .main {
+            display: flex;
+            justify-content: space-between;
+            margin: 0 auto;
+
+            .logo_customer {
+                padding: 40px 10px;
+            }
+        }
     }
 
     .contact {
-        height: 400px;
         background-color: #3265da;
+
+        .main {
+            display: flex;
+            justify-content: space-around;
+            margin: 0 auto;
+
+            .corevalue {
+                color: #fff;
+                padding: 40px;
+                text-align: center;
+            }
+        }
     }
 
     footer {
         height: 400px;
         background-color: #23262b;
 
-        .abc {
-            text-transform: uppercase;
+        .main {
+            margin: 0 auto;
+
+            .logo {
+                display: flex;
+                justify-content: space-around;
+                padding: 10px 0px;
+                width: 100px;
+
+                h4 {
+                    color: #fdce76;
+                }
+            }
+
+            .menu_footer {
+                width: 1000px;
+                display: flex;
+                justify-content: space-around;
+
+                ul {
+                    list-style: none;
+                    display: flex;
+                    padding: 0;
+
+                    li {
+                        padding: 10px 20px;
+                        position: relative;
+
+                        &.active {
+                            a {
+                                color: #fdce76;
+                            }
+                        }
+
+                        a {
+                            text-decoration: none;
+                            color: white;
+                            display: block;
+
+                            &:hover {
+                                color: #fdce76;
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
-
 }
