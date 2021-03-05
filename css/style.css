@@ -386,13 +386,21 @@ body {
 }
 
 .container .contact .main .corevalue {
-  color: #fff;
   padding: 40px;
   text-align: center;
 }
 
-.container .contact .main .corevalue h2 {
+.container .contact .main .corevalue a {
+  text-decoration: none;
+}
+
+.container .contact .main .corevalue a h2 {
   font-size: 30px;
+  color: #fff;
+}
+
+.container .contact .main .corevalue a h2:hover {
+  color: #fdce76;
 }
 
 .container .contact .main .corevalue p {

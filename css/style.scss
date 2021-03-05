@@ -360,12 +360,23 @@ body {
             margin: 0 auto;
 
             .corevalue {
-                color: #fff;
+
                 padding: 40px;
                 text-align: center;
 
-                h2 {
-                    font-size: 30px;
+                a {
+                    text-decoration: none;
+
+                    h2 {
+                        font-size: 30px;
+                        color: #fff;
+
+                        &:hover {
+                            color: #fdce76;
+                        }
+                    }
+
+
                 }
 
                 p {
