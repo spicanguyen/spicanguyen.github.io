@@ -21,7 +21,7 @@ body {
 .container header {
   background: url("/images/slider.png") no-repeat;
   width: 1440px;
-  height: 1050px;
+  height: 899px;
 }
 
 .container .btn_grey {
@@ -190,7 +190,7 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 40px;
+  padding: 40px 0;
 }
 
 .container section .main .relative {
@@ -223,82 +223,83 @@ body {
 
 .container .about .main {
   margin: 0 auto;
+  padding: 80px 0;
 }
 
 .container .about .main .content_about {
-  width: 1200px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-bottom: 30px;
-}
-
-.container .about .main .content_about .left_content {
-  padding: 50px;
-}
-
-.container .about .main .content_about .left_content h2 {
-  font-size: 40px;
-  font-weight: 200;
-}
-
-.container .about .main .content_about .left_content i {
-  padding-right: 20px;
-  color: #fdce76;
-}
-
-.container .about .main .content_about .left_content .head_text {
-  font-size: 18px;
-  width: 400px;
-  line-height: 1.5;
-}
-
-.container .about .main .content_about .left_content .text {
-  color: #666;
-  line-height: 1.5;
+  padding-bottom: 50px;
 }
 
 .container .about .main .content_about .banner_about {
   margin-top: 50px;
   width: 500px;
-  background: url("/images/service.png") no-repeat;
-  background-size: cover;
 }
 
 .container .about .main hr {
   width: 1200px;
-  color: #666;
+  color: #999;
 }
 
 .container .about .main .about_support {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .container .about .main .about_support .support {
-  width: 320px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 20px 40px;
+  padding-top: 30px;
 }
 
 .container .about .main .about_support .support .icon_support {
   padding: 40px 20px 0 0;
 }
 
-.container .about .main .about_support .support img {
+.container .about .main .about_support .support .icon_support img {
   width: 80px;
+}
+
+.container .about .main .about_support .support .ctn_support {
+  width: 250px;
+}
+
+.container .ctn_content {
+  padding-top: 50px;
+}
+
+.container .ctn_content h2 {
+  font-size: 40px;
+  font-weight: 200;
+}
+
+.container .ctn_content i {
+  padding-right: 20px;
+  color: #fdce76;
+}
+
+.container .ctn_content .head_text {
+  width: 500px;
+}
+
+.container .head_text {
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.container .text {
+  color: #666;
+  line-height: 1.5;
 }
 
 .container .pricing {
@@ -317,8 +318,7 @@ body {
 }
 
 .container .pricing .main .content_pricing {
-  padding: 50px;
-  width: 200px;
+  padding: 60px 0;
   color: #fff;
 }
 
@@ -335,18 +335,13 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin: 0 auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .container .service .main .banner_service {
-  padding: 40px;
-}
-
-.container .service .main .right_service {
-  padding: 40px;
+  padding: 60px 0;
 }
 
 .container .blog {
@@ -373,6 +368,10 @@ body {
   padding: 40px 10px;
 }
 
+.container .map .main {
+  margin: 0 auto;
+}
+
 .container .contact {
   background-color: #3265da;
 }
@@ -392,31 +391,34 @@ body {
   text-align: center;
 }
 
+.container .contact .main .corevalue p {
+  color: #c5d2f1;
+}
+
 .container footer {
-  height: 400px;
   background-color: #23262b;
 }
 
 .container footer .main {
   margin: 0 auto;
+  padding: 50px 0;
+  color: #fff;
 }
 
 .container footer .main .logo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  padding: 10px 0px;
-  width: 100px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.container footer .main .logo h4 {
+.container footer .main .logo h2 {
   color: #fdce76;
 }
 
 .container footer .main .menu_footer {
-  width: 1000px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -449,5 +451,46 @@ body {
 
 .container footer .main .menu_footer ul li a:hover {
   color: #fdce76;
+}
+
+.container footer .main .link_footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container footer .main span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  color: #000;
+  margin: 15px;
+  border-radius: 100%;
+}
+
+.container footer .main .fab {
+  font-size: 18px;
+}
+
+.container footer .main .copyright {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #999;
 }
 /*# sourceMappingURL=style.css.map */
