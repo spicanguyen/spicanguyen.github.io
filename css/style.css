@@ -391,6 +391,10 @@ body {
   text-align: center;
 }
 
+.container .contact .main .corevalue h2 {
+  font-size: 30px;
+}
+
 .container .contact .main .corevalue p {
   color: #c5d2f1;
 }
