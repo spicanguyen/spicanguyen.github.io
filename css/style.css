@@ -49,6 +49,7 @@ body {
   font-size: 16px;
   font-weight: 500;
   padding: 15px 30px;
+  margin-top: 20px;
 }
 
 .container .btn_orange:hover {
@@ -236,22 +237,19 @@ body {
 
 .container .about .main {
   margin: 0 auto;
-  padding: 80px 0;
+  padding-bottom: 30px;
 }
 
 .container .about .main .content_about {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding-bottom: 50px;
+  border-bottom: 1px solid #333;
 }
 
-.container .about .main .content_about .banner_about {
-  margin-top: 50px;
-  width: 500px;
+.container .about .main .content_about .banner_about img {
+  max-width: 100%;
+  height: 100%;
 }
 
 .container .about .main hr {
@@ -298,7 +296,8 @@ body {
 
 .container .ctn_content i {
   padding-right: 20px;
-  color: #fdce76;
+  color: #3265da;
+  font-size: 18px;
 }
 
 .container .ctn_content .head_text {
@@ -353,8 +352,12 @@ body {
           justify-content: space-between;
 }
 
-.container .service .main .banner_service {
-  padding: 60px 0;
+.container .service .main .banner_service img {
+  height: 100%;
+}
+
+.container .service .main .ctn_content {
+  padding: 120px 0;
 }
 
 .container .blog {
