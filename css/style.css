@@ -487,6 +487,26 @@ body {
           justify-content: center;
 }
 
+.container footer .main a {
+  text-decoration: none;
+}
+
+.container footer .main a:hover span .fa-facebook-f {
+  color: #1877f2;
+}
+
+.container footer .main a:hover span .fa-twitter {
+  color: #1da1f2;
+}
+
+.container footer .main a:hover span .fa-google-plus-g {
+  color: #d93025;
+}
+
+.container footer .main a:hover span .fa-pinterest-p {
+  color: #e60023;
+}
+
 .container footer .main span {
   display: -webkit-box;
   display: -ms-flexbox;

@@ -455,6 +455,35 @@ body {
                 justify-content: center;
             }
 
+            a {
+                text-decoration: none;
+
+                &:hover {
+
+
+                    span {
+                        // opacity: 0.5;
+
+                        .fa-facebook-f {
+                            color: #1877f2;
+                        }
+
+                        .fa-twitter {
+                            color: #1da1f2;
+                        }
+
+                        .fa-google-plus-g {
+                            color: #d93025;
+                        }
+
+                        .fa-pinterest-p {
+                            color: rgb(230, 0, 35);
+                        }
+                    }
+                }
+
+            }
+
             span {
                 display: flex;
                 justify-content: center;
