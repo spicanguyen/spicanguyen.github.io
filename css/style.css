@@ -146,6 +146,7 @@ body {
   text-decoration: none;
   color: #333;
   display: block;
+  white-space: nowrap;
 }
 
 .container .main .header_menu .menu ul li ul li a:hover {
