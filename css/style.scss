@@ -107,9 +107,27 @@ body {
                             color: white;
                             display: block;
                             padding: 20px;
+                            // border-bottom: 2px solid transparent;
+                            position: relative;
+
+                            &::after {
+                                position: absolute;
+                                width: 0;
+                                height: 2px;
+                                background-color: #fdce76;
+                                content: ' ';
+                                bottom: 0;
+                                left: 0;
+                                transition: width 0.15s ease-out;
+                            }
 
                             &:hover {
                                 color: #fdce76;
+
+                                &::after {
+
+                                    width: 100%;
+                                }
                             }
                         }
 
@@ -118,7 +136,7 @@ body {
                             position: absolute;
                             flex-direction: column;
                             top: 56px;
-                            left: 17px;
+                            left: 0px;
                             background-color: #fdce76;
 
                             li {
@@ -130,9 +148,11 @@ body {
                                     color: #333;
                                     display: block;
                                     white-space: nowrap;
+                                    border-bottom: none;
 
                                     &:hover {
                                         color: #3265da;
+                                        border-bottom: none;
                                     }
                                 }
 
