@@ -98,11 +98,11 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin: 0;
   padding: 0;
 }
 
 .container .main .header_menu .menu ul li {
-  padding-right: 40px;
   position: relative;
 }
 
@@ -118,6 +118,7 @@ body {
   text-decoration: none;
   color: white;
   display: block;
+  padding: 20px;
 }
 
 .container .main .header_menu .menu ul li a:hover {
@@ -131,13 +132,24 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  top: 38px;
-  left: 0;
-  width: 100px;
+  top: 56px;
+  left: 17px;
+  background-color: #fdce76;
 }
 
 .container .main .header_menu .menu ul li ul li {
-  padding-bottom: 10px;
+  background-color: #fdce76;
+}
+
+.container .main .header_menu .menu ul li ul li a {
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #333;
+  display: block;
+}
+
+.container .main .header_menu .menu ul li ul li a:hover {
+  color: #3265da;
 }
 
 .container .main .header_menu .login {
