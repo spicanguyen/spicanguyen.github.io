@@ -907,7 +907,7 @@ html {
   background: #ff5858;
   background: linear-gradient(45deg, #ff5858 0%, #fb7ea9 60%, #f857a6 100%);
   color: white;
-  padding: 30px;
+  padding: 70px;
 }
 
 .sec-dowload .container {
@@ -922,7 +922,7 @@ html {
 .sec-dowload .sec-banner {
   background: url(/images/bgr-phone-2.png) no-repeat;
   width: 830px;
-  height: 500px;
+  height: 460px;
 }
 
 .sec-dowload .sec-caption {
