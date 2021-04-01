@@ -1158,7 +1158,7 @@ footer {
 .slider-img,
 .sec-banner {
     position: relative;
-    animation: slider-img 1s ease-in-out;
+    animation: slider-img 1s ease-in-out 2s;
 }
 
 @keyframes slider-img {
