@@ -11,6 +11,8 @@
     <link rel='stylesheet' href='https://npmcdn.com/flickity@2/dist/flickity.css'>
     <link rel="stylesheet" href="./style.css">
 
+    <link rel="stylesheet" href="css/libs/animate.css">
+    <link rel="stylesheet" href="css/site.css">
     <!-- carousel -->
     <link rel="stylesheet" href="css/owl.carousel.css">
     <link rel="stylesheet" href="/css/owl.theme.default.css">
@@ -19,7 +21,7 @@
 <body>
     <!-- Begin header -->
     <header>
-        <div class="nav">
+        <div class="nav wow fadeInDown">
             <div class="container">
                 <div class="nav-logo">
                     <img src="/images/logo.png" alt="">
@@ -37,7 +39,7 @@
                 </div>
             </div>
         </div>
-        <div class="nav-slider">
+        <div class="nav-slider wow pulse">
             <div class="container">
                 <div class="slider-caption">
                     <h1 class="title-slider">Great tool to make your day much better</h1>
@@ -56,7 +58,7 @@
     <!-- End header -->
 
     <!-- Begin Section Work -->
-    <section class="sec sec-work">
+    <section class="sec sec-work ">
         <div class="container">
             <div class="title">
                 <h3 class="head-title">Suada does all the work so you don’t have to</h3>
@@ -177,7 +179,7 @@
         </div>
     </section>
     <!-- End Section -->
-    <section class="sec-track">
+    <section class="sec-track wow slideInRight">
         <div class="container">
             <div class="title">
                 <h3 class="head-title">Track your progress with our built-in tracker</h3>
@@ -271,15 +273,14 @@
         </div>
     </section>
 
-    <section class="sec-bg">
+    <section class="sec-bg wow bounceInLeft">
         <div class="before"></div>
         <div class="after"></div>
         <div class="container">
-            <!-- <div class="bg"></div> -->
         </div>
     </section>
 
-    <section class="sec-services">
+    <section class="sec-services wow slideInLeft">
         <div class="container">
             <div class="title">
                 <h3 class="head-title">Suada will be right there when you will need it</h3>
@@ -388,7 +389,7 @@
             <!-- <div class="video"></div> -->
         </div>
     </section>
-    <section class="sec-testimonials">
+    <section class="sec-testimonials wow fadeInDown">
         <div class="container">
             <div class="title">
                 <h3 class="head-title">As far as we know people simply love Suada</h3>
@@ -505,7 +506,7 @@
             </div> -->
         </div>
     </section>
-    <section class="pricing">
+    <section class="pricing wow pulse">
         <div class="container">
             <div class="title">
                 <h3 class="head-title">Totally free, but could get way better
@@ -674,7 +675,9 @@
                     All rights reserved.</p>
             </div>
         </div>
-
+        <svg class="spinner" width="65px" height="65px" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+            <circle class="path" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33" r="30"></circle>
+        </svg>
     </footer>
 
     <!-- Begin Back to top -->
@@ -778,7 +781,24 @@
         })
 
     </script>
-
+    <script src="dist/wow.js"></script>
+    <script>
+        wow = new WOW(
+            {
+                animateClass: 'animated',
+                offset: 100,
+                callback: function (box) {
+                    console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
+                }
+            }
+        );
+        wow.init();
+        document.getElementById('moar').onclick = function () {
+            var section = document.createElement('section');
+            section.className = 'section--purple wow fadeInDown';
+            this.parentNode.insertBefore(section, this);
+        };
+    </script>
 
 </body>
 
