@@ -878,6 +878,7 @@ footer {
             color: #aaa;
             border-radius: 20px;
             flex: 1;
+            outline: none;
         }
 
 
@@ -1202,4 +1203,8 @@ footer {
 .section {
     width: 100%;
     height: 300px;
+}
+
+.owl-dot {
+    outline: none;
 }

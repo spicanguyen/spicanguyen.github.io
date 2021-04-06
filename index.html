@@ -11,6 +11,7 @@
     <link rel='stylesheet' href='https://npmcdn.com/flickity@2/dist/flickity.css'>
     <!-- <link rel="stylesheet" href="./style.css"> -->
 
+    <link rel="stylesheet" href="/css/lightbox.min.css">
 
     <link rel="stylesheet" href="/libraries/wow/css/libs/animate.css">
     <!-- <link rel="stylesheet" href="/libraries/wow/css/site.css"> -->
@@ -478,41 +479,57 @@
 
             <div class="owl-carousel owl-theme client">
                 <div class="item">
-                    <h4><img src="/images/client_1.png" alt=""></h4>
+                    <h4> <a class="example-image-link" href="/images/client_1.png" data-lightbox="example-set"
+                            data-title=""><img class="example-image" src="/images/client_1.png" alt="" /></a></h4>
+                    <!-- <h4><img src="/images/client_1.png" alt=""></h4> -->
                 </div>
                 <div class="item">
-                    <h4><img src="/images/client_2.png" alt=""></h4>
+                    <h4><a class="example-image-link" href="/images/client_2.png" data-lightbox="example-set"
+                            data-title=""><img class="example-image" src="/images/client_2.png" alt="" /></a></h4>
                 </div>
                 <div class="item">
-                    <h4><img src="/images/client_3.png" alt=""></h4>
+                    <h4><a class="example-image-link" href="/images/client_3.png" data-lightbox="example-set"
+                            data-title=""><img class="example-image" src="/images/client_3.png" alt="" /></a></h4>
                 </div>
                 <div class="item">
-                    <h4><img src="/images/client_4.png" alt=""></h4>
+                    <h4><a class="example-image-link" href="/images/client_4.png" data-lightbox="example-set"
+                            data-title=""><img class="example-image" src="/images/client_4.png" alt="" /></a></h4>
                 </div>
                 <div class="item">
-                    <h4><img src="/images/client_5.png" alt=""></h4>
+                    <h4><a class="example-image-link" href="/images/client_5.png" data-lightbox="example-set"
+                            data-title=""><img class="example-image" src="/images/client_5.png" alt="" /></a></h4>
                 </div>
                 <div class="item">
-                    <h4><img src="/images/client_6.png" alt=""></h4>
+                    <h4><a class="example-image-link" href="/images/client_6.png" data-lightbox="example-set"
+                            data-title=""><img class="example-image" src="/images/client_6.png" alt="" /></a></h4>
+                </div>
+
+                <div class="item">
+                    <h4> <a class="example-image-link" href="/images/client_1.png" data-lightbox="example-set"
+                            data-title=""><img class="example-image" src="/images/client_1.png" alt="" /></a></h4>
+                    <!-- <h4><img src="/images/client_1.png" alt=""></h4> -->
                 </div>
                 <div class="item">
-                    <h4><img src="/images/client_1.png" alt=""></h4>
+                    <h4><a class="example-image-link" href="/images/client_2.png" data-lightbox="example-set"
+                            data-title=""><img class="example-image" src="/images/client_2.png" alt="" /></a></h4>
                 </div>
                 <div class="item">
-                    <h4><img src="/images/client_2.png" alt=""></h4>
+                    <h4><a class="example-image-link" href="/images/client_3.png" data-lightbox="example-set"
+                            data-title=""><img class="example-image" src="/images/client_3.png" alt="" /></a></h4>
                 </div>
                 <div class="item">
-                    <h4><img src="/images/client_3.png" alt=""></h4>
+                    <h4><a class="example-image-link" href="/images/client_4.png" data-lightbox="example-set"
+                            data-title=""><img class="example-image" src="/images/client_4.png" alt="" /></a></h4>
                 </div>
                 <div class="item">
-                    <h4><img src="/images/client_4.png" alt=""></h4>
+                    <h4><a class="example-image-link" href="/images/client_5.png" data-lightbox="example-set"
+                            data-title=""><img class="example-image" src="/images/client_5.png" alt="" /></a></h4>
                 </div>
                 <div class="item">
-                    <h4><img src="/images/client_5.png" alt=""></h4>
+                    <h4><a class="example-image-link" href="/images/client_6.png" data-lightbox="example-set"
+                            data-title=""><img class="example-image" src="/images/client_6.png" alt="" /></a></h4>
                 </div>
-                <div class="item">
-                    <h4><img src="/images/client_6.png" alt=""></h4>
-                </div>
+
             </div>
 
         </div>
@@ -522,11 +539,11 @@
     <section class="pricing">
         <div class="container">
             <div class="title">
-                <h3 data-wow-delay="0.25s" class="head-title wow fadeInUp">Totally free, but could get way better
+                <h3 data-wow-delay="0.75s" class="head-title wow fadeInDown">Totally free, but could get way better
                     with our paid plans</h3>
             </div>
             <div class="price-product">
-                <div class="product">
+                <div data-wow-delay="0.5s" class="product  wow fadeInLeft">
                     <div class="head-product">
                         <h4 class="titile">Casual</h4>
                         <p class="subtitle">Free forever</p>
@@ -545,7 +562,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="product">
+                <div data-wow-delay="0.25s" class="product wow fadeInUp">
                     <div class="head-product">
                         <h4 class="titile">Achiever</h4>
                         <p class="subtitle">$5.00 / month</p>
@@ -571,7 +588,7 @@
                     </div>
                 </div>
 
-                <div class="product">
+                <div data-wow-delay="0.5s" class="product wow fadeInRight">
                     <div class="head-product">
                         <h4 class="titile">Machine</h4>
                         <p class="subtitle">$7.00 / month</p>
@@ -812,6 +829,8 @@
         );
         wow.init();
     </script>
+
+    <script src="/js/lightbox-plus-jquery.min.js"></script>
 
 </body>
 
