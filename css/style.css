@@ -700,8 +700,9 @@ header .nav-slider .container .slider-img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .sec-testimonials .sec-user .user {
@@ -873,6 +874,7 @@ html {
   border-radius: 10px;
   -webkit-box-shadow: 0 1px 5px #aaa;
           box-shadow: 0 1px 5px #aaa;
+  max-width: 30%;
 }
 
 .product .head-product {
@@ -927,7 +929,8 @@ html {
   color: #444;
 }
 
-.cont-product .far {
+.cont-product .far,
+.cont-product .fas {
   color: #f85782;
   font-size: 20px;
   padding-right: 10px;
