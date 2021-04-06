@@ -53,11 +53,18 @@ body {
 .navbar {
     position: fixed;
     top: 0;
-    z-index: 1;
+    z-index: 99;
     width: 100%;
-    height: 60px;
-    background: rgb(248, 87, 130);
+    height: 80px;
+    background: transparent;
+    margin-bottom: 5px;
+    box-shadow: none;
+    // transition: background-color 0.25s ease-in-out;
+    transition-property: background-color, box-shadow;
+    transition-duration: 0.25s;
+    transition-timing-function: ease-out;
 }
+
 
 
 /* ------ Button -------*/
