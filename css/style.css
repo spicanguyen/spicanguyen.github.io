@@ -1,24 +1,24 @@
 @font-face {
   font-family: AktivGrotesk;
-  src: url(/font/AktivGrotesk-XBold.otf);
+  src: url(/font/Roboto-Black.ttf);
   font-weight: 800;
 }
 
 @font-face {
   font-family: AktivGrotesk;
-  src: url(/font/AktivGrotesk-Light.otf);
+  src: url(/font/Roboto-Light.ttf);
   font-weight: 100;
 }
 
 @font-face {
   font-family: AktivGrotesk;
-  src: url(/font/AktivGrotesk-Regular.otf);
+  src: url(/font/Roboto-Regular.ttf);
   font-weight: 400;
 }
 
 @font-face {
   font-family: AktivGrotesk;
-  src: url(/font/AktivGrotesk-Bold.otf);
+  src: url(/font/Roboto-Bold.ttf);
   font-weight: 600;
 }
 
