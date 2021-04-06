@@ -22,6 +22,11 @@
   font-weight: 600;
 }
 
+body {
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+
 html,
 body {
   margin: 0 !important;
@@ -37,7 +42,18 @@ body {
 .container {
   margin: 0 auto;
   max-width: 1440px;
+  height: 100%;
   padding: 0 20px;
+}
+
+/*setup id*/
+.navbar {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  height: 60px;
+  background: #f85782;
 }
 
 /* ------ Button -------*/
@@ -78,7 +94,7 @@ body {
 header {
   background: #ff5858;
   background: linear-gradient(45deg, #ff5858 0%, #fb7ea9 60%, #f857a6 100%);
-  padding: 40px 0 0 0;
+  padding: 20px 0 0 0;
   color: white;
 }
 
@@ -87,7 +103,7 @@ header a {
   text-decoration: none;
 }
 
-header .nav .container {
+header .navbar .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -96,7 +112,7 @@ header .nav .container {
           align-items: center;
 }
 
-header .nav .container .nav-logo {
+header .navbar .container .nav-logo {
   width: 40%;
   font-weight: 800;
   display: -webkit-box;
@@ -104,7 +120,7 @@ header .nav .container .nav-logo {
   display: flex;
 }
 
-header .nav .container .nav-logo a {
+header .navbar .container .nav-logo a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -113,7 +129,7 @@ header .nav .container .nav-logo a {
           justify-content: center;
 }
 
-header .nav .container .nav-logo .name-logo {
+header .navbar .container .nav-logo .name-logo {
   padding-left: 10px;
   font-size: 20px;
   display: -webkit-box;
@@ -127,12 +143,12 @@ header .nav .container .nav-logo .name-logo {
           align-items: center;
 }
 
-header .nav .container .slide_right:hover {
+header .navbar .container .slide_right:hover {
   -webkit-box-shadow: inset 400px 0 0 0 #fff;
           box-shadow: inset 400px 0 0 0 #fff;
 }
 
-header .nav .container .btn-sign-up {
+header .navbar .container .btn-sign-up {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -160,24 +176,24 @@ header .nav .container .btn-sign-up {
   transition: ease-out 0.4s;
 }
 
-header .nav .container .btn-sign-up:hover {
+header .navbar .container .btn-sign-up:hover {
   background-color: white;
   border-radius: 30px;
 }
 
-header .nav .container .btn-sign-up:hover a {
+header .navbar .container .btn-sign-up:hover a {
   color: #ff3396;
   position: relative;
 }
 
-header .nav .container .nav-menu {
+header .navbar .container .nav-menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   width: 60%;
 }
 
-header .nav .container .nav-menu .ul-menu {
+header .navbar .container .nav-menu .ul-menu {
   list-style-type: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -193,14 +209,14 @@ header .nav .container .nav-menu .ul-menu {
   text-transform: uppercase;
 }
 
-header .nav .container .nav-menu .ul-menu .li-menu a {
+header .navbar .container .nav-menu .ul-menu .li-menu a {
   text-decoration: none;
   color: #fff;
   display: block;
   position: relative;
 }
 
-header .nav .container .nav-menu .ul-menu .li-menu a::after {
+header .navbar .container .nav-menu .ul-menu .li-menu a::after {
   position: absolute;
   width: 0;
   height: 2px;
@@ -212,11 +228,11 @@ header .nav .container .nav-menu .ul-menu .li-menu a::after {
   transition: width 0.15s ease-out;
 }
 
-header .nav .container .nav-menu .ul-menu .li-menu a:hover::after {
+header .navbar .container .nav-menu .ul-menu .li-menu a:hover::after {
   width: 100%;
 }
 
-header .nav .container .nav-menu .ul-menu .li-menu a:last-of-type {
+header .navbar .container .nav-menu .ul-menu .li-menu a:last-of-type {
   border-bottom: none;
 }
 
@@ -258,6 +274,7 @@ header .nav-slider .container .slider-caption .btn i {
 }
 
 header .nav-slider .container .slider-img {
+  bottom: 0;
   background: url(/images/slider.png) no-repeat;
   width: 779px;
   height: 635px;
