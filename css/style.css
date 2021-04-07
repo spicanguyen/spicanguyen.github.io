@@ -247,6 +247,10 @@ header .navbar .container .nav-menu .ul-menu .li-menu a:last-of-type {
   border-bottom: none;
 }
 
+header .nav-slider {
+  padding: 50px 0 0 0;
+}
+
 header .nav-slider .container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -285,7 +289,6 @@ header .nav-slider .container .slider-caption .btn i {
 }
 
 header .nav-slider .container .slider-img {
-  bottom: 0;
   background: url(/images/slider.png) no-repeat;
   width: 779px;
   height: 635px;
@@ -298,6 +301,10 @@ header .nav-slider .container .slider-img {
   position: relative;
   color: #fff;
   padding-top: 50px;
+}
+
+.sec-work .title {
+  padding-bottom: 150px;
 }
 
 .sec-work .container {
@@ -429,7 +436,8 @@ header .nav-slider .container .slider-img {
 }
 
 .sec-track .container .chart .chart1 {
-  padding: 20px 0;
+  width: 30%;
+  padding: 20px 30px;
   border-right: 0.5px solid #b3b3b3;
 }
 
@@ -710,6 +718,7 @@ header .nav-slider .container .slider-img {
   padding: 50px;
   margin: 0 20px;
   border-radius: 5px;
+  width: 30%;
 }
 
 .sec-testimonials .sec-user .user .avatar {
@@ -899,10 +908,10 @@ html {
 }
 
 .product:hover {
-  -webkit-box-shadow: 0 3px 5px #aaa;
-          box-shadow: 0 3px 5px #aaa;
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
 }
 
 .price-product {
